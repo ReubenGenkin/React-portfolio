@@ -3,7 +3,7 @@
     {
         "id": 1,
         "title": "Beat-it music reviews",
-        "image": "../../assets/beatit.png",
+        "image": "../assets/beatit.png",
         "github": "https://github.com/ashryan125/musicesq",
         "link": "https://beatit-music-app.herokuapp.com/",
         "subtitle": "JavaScript, Handlebars, Express, Node, MySQL2, Spotify web api"
@@ -21,7 +21,7 @@
     {
         "id": 3,
         "title": "Timed Quiz",
-        "image": "../../assets/quiz.png",
+        "image": "/assets/quiz.png",
         "github": "https://github.com/ReubenGenkin/deckard",
         "link": "https://reubengenkin.github.io/deckard/",
         "subtitle": "HTML, CSS, JavaScript, JQuery"

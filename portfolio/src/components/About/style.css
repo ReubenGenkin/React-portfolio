@@ -1,9 +1,13 @@
 #About {
-    margin-top: 7%;
+    margin-top: 100px;
 }
 
 .profilePic {
     height: 320px;
     border-radius: 5px;
     margin: 0 auto;
+}
+
+.tech-list {
+    list-style-type: none;
 }

@@ -41,16 +41,16 @@ function ContactForm() {
 
     return (
 
-        <section id="Contact"  className="d-flex justify-content-center mb-5">
-            <div className="card w-100 m-3" >
-                <div className="row g-0">
-                    <h1 className="card-title d-flex justify-content-center">Contact Me</h1>
+        <section id="Contact"  className=" mb-5">
+            <div className="card w-70 m-3 content-card ml-2" >
+                <div className="row g-0 ml-4">
+                    <h1 className="card-title">Contact Me</h1>
                 </div>
                 <div className="row g-0">
-                <div className="align-self-center">
+                <div className="w-40">
                     <div className="card-body">
 
-                        <form id="contact-form w-80" onSubmit={handleSubmit}>
+                        <form id="contact-form w-60" onSubmit={handleSubmit}>
                             <div className="form-group m-2">
                                 <label htmlFor="name">Name: </label>
                                 <input type="text" className="form-control" defaultValue={name} name="name" aria-describedby="name" placeholder="Enter name" onBlur={handleChange} />

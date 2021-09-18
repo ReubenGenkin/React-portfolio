@@ -11,17 +11,26 @@ function App(props) {
 
   const [page, setPage] = useState('About');
 
-  function renderPage() {
-    if (page === "About") {
-      return <About />;
-    } else if (page === "Project") {
-      return <Project />;
-    } else if (page === "Contact") {
-      return <Contact />
-    } else if (page === "Resume") {
-      return <Resume />
-    }
+   function renderPage() {
+  //   if (page === "About") {
+  //     return <About />;
+  //   } else if (page === "Project") {
+  //     return <Project />;
+  //   } else if (page === "Contact") {
+  //     return <Contact />
+  //   } else if (page === "Resume") {
+  //     return <Resume />
+  //   }  }
+    return (
+      <div>
+        <About/>
+        <Project/>
+        <Contact/>
+        <Resume/>
+      </div>
+    );
   }
+
 
   return (
 

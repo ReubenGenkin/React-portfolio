@@ -1,13 +1,14 @@
 import React from 'react';
-
+import './style.css';
 
 function Header(props){
 
     return(
         <div className = 'header'>
-            <h1>
-                Reuben Genkin
-            </h1>
+            <a href = "/">
+                <span className = "header-home">Reuben Genkin</span>
+                
+            </a>
         </div>
     )
 

@@ -3,7 +3,7 @@
     {
         "id": 1,
         "title": "Beat-it music reviews",
-        "image": "../assets/beatit.png",
+        "image": "https://picsum.photos/150/100",
         "github": "https://github.com/ashryan125/musicesq",
         "link": "https://beatit-music-app.herokuapp.com/",
         "subtitle": "JavaScript, Handlebars, Express, Node, MySQL2, Spotify web api"
@@ -12,16 +12,16 @@
     {
         "id": 2,
         "title": "Date Night",
-        "image": "https://cdn10.phillymag.com/wp-content/uploads/sites/3/2020/03/takeout-food-delivery.jpeg",
-        "github": "https://github.com/damatgre/whats-for-dinner",
-        "link": "https://jilliana328.github.io/whats-for-dinner/",
+        "image": "https://picsum.photos/150/100",
+        "github": "",
+        "link": "",
         "subtitle": "HTML, CSS, JavaScript, JQuery"
     },
     
     {
         "id": 3,
         "title": "Timed Quiz",
-        "image": "/assets/quiz.png",
+        "image": "https://picsum.photos/150/100",
         "github": "https://github.com/ReubenGenkin/deckard",
         "link": "https://reubengenkin.github.io/deckard/",
         "subtitle": "HTML, CSS, JavaScript, JQuery"

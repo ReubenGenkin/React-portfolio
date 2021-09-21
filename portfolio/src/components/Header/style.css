@@ -7,3 +7,10 @@ a {
     color: black;
     font-size: 40px;
 }
+
+.header-icon {
+    background: url('../../assets/logo.png');
+    height: 64px;
+    width: 64px;
+    /* Other styles here */
+}

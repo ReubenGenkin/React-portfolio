@@ -1,0 +1,17 @@
+.nav-color-wrapper {
+    background-color: black;
+    color: white;
+}
+
+.nav-bar--hidden {
+    opacity: .3;
+}
+
+#navigatinScrollSpy {
+    background-color: black;
+}
+
+.nav-link {
+
+    color: inherit;
+}

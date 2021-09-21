@@ -9,7 +9,7 @@ function About() {
 
 
 
-        <section id="About" className="col-md-10 offset-md-1 mb-2 g-2">
+        <section id="About" className=" mb-2 g-2">
 
             <div className="card content-card" >
                 <div className="card-body">

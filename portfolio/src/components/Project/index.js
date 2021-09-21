@@ -1,11 +1,11 @@
 import React from 'react';
-import projects from "../Projects.json"
+import projects from "../projects.json"
 import './style.css'
 
 function Project(props) {
         return (
 
-                <section id="Project" className="col-md-10 offset-md-1 mb-2 g-2">
+                <section id="Project" className=" mb-2 g-2">
                         <div className="card content-card" >
                                 <div className="card-body">
                                         <div className="row card-title-wrapper">

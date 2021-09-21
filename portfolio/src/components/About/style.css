@@ -1,5 +1,6 @@
 #About {
     margin-top: 100px;
+    background-color: white;
 }
 
 .profilePic {
@@ -10,4 +11,9 @@
 
 .tech-list {
     list-style-type: none;
+}
+
+.card {
+    background-color: white;
+    color: black;
 }

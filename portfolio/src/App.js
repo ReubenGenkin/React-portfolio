@@ -16,7 +16,7 @@ function App(props) {
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
-      let topPosition = 400
+      let topPosition = 200
       if (currentPosition > scrollTop) {
         // downscroll code
         setScrolling(false);
@@ -56,8 +56,8 @@ function App(props) {
         <Home/>
         <About />
         <Project />
-        <Contact />
         <Resume />
+        <Contact />
       </div>
     );
   }

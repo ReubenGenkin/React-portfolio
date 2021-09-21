@@ -7,7 +7,7 @@ function Header(props){
         <div className = 'header offset-md-1'>
             <a href = "/">
                 
-                <span className = {`header-home ${props.scrollPast ? "header-icon": ""}`}></span>
+                <span className = {`header-home ${props.scrollPast ? "icon-top-bar": ""}`}></span>
                 
             </a>
         </div>

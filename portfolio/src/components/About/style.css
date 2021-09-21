@@ -1,6 +1,13 @@
 #About {
     margin-top: 100px;
     background-color: white;
+    color: black;
+    height: 300px;
+}
+
+.about-container {
+    margin: 50px;
+    padding: 24px 0;
 }
 
 .profilePic {
@@ -11,9 +18,4 @@
 
 .tech-list {
     list-style-type: none;
-}
-
-.card {
-    background-color: white;
-    color: black;
 }

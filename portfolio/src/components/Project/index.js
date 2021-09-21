@@ -6,10 +6,10 @@ function Project(props) {
         return (
 
                 <section id="Project" className=" mb-2 g-2">
-                        <div className="card content-card" >
-                                <div className="card-body">
-                                        <div className="row card-title-wrapper">
-                                                <h2 className="card-title">Projects</h2>
+                        <div className="" >
+   
+                                        <div className="row">
+                                                <h2 className="">Projects</h2>
                                         </div>
 
                                         <div className="card-text-wrapper">
@@ -33,7 +33,7 @@ function Project(props) {
                                         </div>
                                 </div>
 
-                        </div>
+
 
                 </section>
         );

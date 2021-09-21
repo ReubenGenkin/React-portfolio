@@ -11,21 +11,21 @@ function About() {
 
         <section id="About" className=" mb-2 g-2">
 
-            <div className="card content-card" >
-                <div className="card-body">
+            <div className="container-fluid about-container" >
 
-                    <div className="row card-title-wrapper">
-                        <h2 className="card-title ">About</h2>
+
+                    <div className="row ">
+                        <h2 className=" ">About</h2>
                     </div>
 
-                    <div className="card-text-wrapper">
-                        <p className="card-text fs-6">Junior full stack developer proficient in core development technologies, such as JavaScript, HTML5, CSS, REACT.js and other technologies.
+                    <div className="row">
+                        <p className="fs-6">Junior full stack developer proficient in core development technologies, such as JavaScript, HTML5, CSS, REACT.js and other technologies.
                             I utilize my background in sales and the food service industry to effectively communicate and adapt within the AGILE workflow.In my work I bring a focus to DRY and concise code with other developers, as
                             well as interactive, dynamic, and accessible design for users.I Earned my full stack web development certificate from Rutgers Coding Bootcamp.
                             When programming, I efficiently and effectively find solutions through collaborating with team members, as well as tools like GitHub.My goal with my work is to advance accessibility,
                             and find creative ways to enhance the user.</p>
 
-                        <div className=" row tech-wrapper">
+                        {/* <div className=" row tech-wrapper">
                             <h3>Technologies</h3>
                             <div className="col-md-4">
                                 <ul className="tech-list">
@@ -52,10 +52,10 @@ function About() {
                                 </ul>
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-            </div>
+            
         </section>
 
 

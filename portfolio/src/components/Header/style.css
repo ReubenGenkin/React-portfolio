@@ -4,13 +4,15 @@ a {
 
 .header-home {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 40px;
 }
 
-.header-icon {
+.icon-top-bar {
     background: url('../../assets/logo.png');
-    height: 64px;
-    width: 64px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
     /* Other styles here */
 }

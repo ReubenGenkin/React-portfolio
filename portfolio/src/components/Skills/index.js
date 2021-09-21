@@ -17,12 +17,12 @@ function Skills() {
 
                 <div className="row offset-1 col-md-11" >
                     <h3 className="row skills-sub-header col-md-2">Well Versed in</h3>
-                    <div className="row">
+                    <div className="row w-100">
                     <ul className="col-md-2 skill-list">
                         <li>React.js</li>
                         <li>JavaScript</li>
                     </ul>
-                    <ul className="col-md-2 skill-list">
+                    <ul className="col-md-2 pl-5 skill-list">
                         <li>Node</li>
                         <li>HTML5/CSS</li>
                     </ul>

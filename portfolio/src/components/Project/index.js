@@ -11,9 +11,9 @@ function Project(props) {
                         </div>
 
 
-                        <div className="card-wrapper row offset-1 w-100">
+                        <div className="card-wrapper row offset-1 w-90">
                                 {projects.map((project) => (
-                                        <div className="card project-card col-md-4 col-10 border-0">
+                                        <div className="card project-card col-md-3 border-0">
                                                 <a href={project.link} className="project-link">
                                                 </a>
                              

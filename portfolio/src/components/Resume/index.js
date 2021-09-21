@@ -6,8 +6,8 @@ function Resume() {
     return (
 
 
-        <section id="Resume" className="container-fluid resume-wrapper row col-md-10">
-            <p className="resume-link col-md-2 offset-6">Download Resume</p>
+        <section id="Resume" className="container-fluid resume-wrapper row">
+            <p className="resume-link">Download Resume Here</p>
         </section>
 
 

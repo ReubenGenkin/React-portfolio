@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helper';
+import './style.css'
 
 function ContactForm() {
 
@@ -42,39 +43,38 @@ function ContactForm() {
     return (
 
         <section id="Contact" className="container-fluid">
-            <div className="card contact-card" >
+            <div class="contact-wrapper">
                 <div className="row">
-                    <h1 className="section-header contact-header card-header">Contact Me</h1>
+                    <h2 className="section-header contact-header">Contact Me</h2>
                 </div>
-                    <div className="card-body">
 
-                        <form id="contact-form" onSubmit={handleSubmit}>
-                            <div className="form-group m-2">
-                                <label htmlFor="name">Name: </label>
-                                <input type="text" className="form-control" defaultValue={name} name="name" aria-describedby="name" placeholder="Your name" onBlur={handleChange} />
-                            </div>
-
-                            <div className="form-group m-2">
-                                <label htmlFor="email">Email Address: </label>
-
-                                <input type="email" className="form-control" defaultValue={email} name="email" aria-describedby="email" placeholder="Your email" onBlur={handleChange} />
-                            </div>
-
-                            <div className="form-group m-2">
-                                <label htmlFor="message">Message: </label>
-                                <textarea name="message" className="form-control" defaultValue={message} aria-describedby="message" placeholder="Your message" onBlur={handleChange} rows="5" />
-                            </div>
-
-                            {errorMessage && (
-                                <div>
-                                    <p className="error-text">{errorMessage}</p>
-                                </div>
-                            )}
-
-                            <button type="submit" className="btn btn-primary m-2 btn-lg">Submit</button>
-                        </form>
+                <form id="contact-form row email-form " onSubmit={handleSubmit}>
+                    <div className="form-group m-2">
+                        <label htmlFor="name" className="form-style form-label">Name: </label>
+                        <input type="text" className="form-control form-style" defaultValue={name} name="name" aria-describedby="name" placeholder="Your name" onBlur={handleChange} />
                     </div>
-                </div>
+
+                    <div className="form-group m-2">
+                        <label htmlFor="email" className="form-style form-label">Email Address: </label>
+
+                        <input type="email" className="form-control form-style" defaultValue={email} name="email" aria-describedby="email" placeholder="Your email" onBlur={handleChange} />
+                    </div>
+
+                    <div className="form-group m-2">
+                        <label htmlFor="message" className="form-style form-label">Message: </label>
+                        <textarea name="message" className="form-control form-style" defaultValue={message} aria-describedby="message" placeholder="Your message" onBlur={handleChange} rows="5" />
+                    </div>
+
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <div className="button-wrapper">
+                        <button type="submit" className="btn btn-primary m-2 btn-lg submit-btn col-md-2">Submit</button>
+                    </div>
+                </form>
+            </div>
 
         </section>
 

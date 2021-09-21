@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css'
+import Skills from './components/Skills';
 
 function App(props) {
   const [scrolling, setScrolling] = useState(false);
@@ -56,6 +57,7 @@ function App(props) {
         <Home/>
         <About />
         <Project />
+        <Skills/>
         <Resume />
         <Contact />
       </div>

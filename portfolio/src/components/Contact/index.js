@@ -41,30 +41,28 @@ function ContactForm() {
 
     return (
 
-        <section id="Contact"  className=" mb-5">
-            <div className="card w-70 m-3 content-card ml-2" >
-                <div className="row g-0 ml-4">
-                    <h1 className="section-header">Contact Me</h1>
+        <section id="Contact" className="container-fluid">
+            <div className="card contact-card" >
+                <div className="row">
+                    <h1 className="section-header contact-header card-header">Contact Me</h1>
                 </div>
-                <div className="row g-0">
-                <div className="w-40">
                     <div className="card-body">
 
-                        <form id="contact-form w-60" onSubmit={handleSubmit}>
+                        <form id="contact-form" onSubmit={handleSubmit}>
                             <div className="form-group m-2">
                                 <label htmlFor="name">Name: </label>
-                                <input type="text" className="form-control" defaultValue={name} name="name" aria-describedby="name" placeholder="Enter name" onBlur={handleChange} />
+                                <input type="text" className="form-control" defaultValue={name} name="name" aria-describedby="name" placeholder="Your name" onBlur={handleChange} />
                             </div>
 
                             <div className="form-group m-2">
                                 <label htmlFor="email">Email Address: </label>
 
-                                <input type="email" className="form-control" defaultValue={email} name="email" aria-describedby="email" placeholder="Enter email" onBlur={handleChange} />
+                                <input type="email" className="form-control" defaultValue={email} name="email" aria-describedby="email" placeholder="Your email" onBlur={handleChange} />
                             </div>
 
                             <div className="form-group m-2">
                                 <label htmlFor="message">Message: </label>
-                                <textarea name="message" className="form-control" defaultValue={message} aria-describedby="message" placeholder="Enter message" onBlur={handleChange} rows="5" />
+                                <textarea name="message" className="form-control" defaultValue={message} aria-describedby="message" placeholder="Your message" onBlur={handleChange} rows="5" />
                             </div>
 
                             {errorMessage && (
@@ -77,8 +75,6 @@ function ContactForm() {
                         </form>
                     </div>
                 </div>
-            </div>
-            </div>
 
         </section>
 

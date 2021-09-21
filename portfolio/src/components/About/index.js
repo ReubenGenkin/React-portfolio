@@ -13,7 +13,7 @@ function About() {
             <div className="about-wrapper">
 
                     <div className="row col-md-10 offset-1 ">
-                        <h2 className=" section-header about-margin" >About</h2>
+                        <h2 className=" section-header about-margin about-header" >About</h2>
                     </div>
 
                     <div className="row col-md-10 offset-1" >

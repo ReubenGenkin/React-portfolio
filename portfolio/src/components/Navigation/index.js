@@ -1,4 +1,3 @@
-import { createContext, useEffect, useState } from 'react';
 import React from 'react';
 import Header from '../Header';
 import './style.css'
@@ -25,11 +24,15 @@ function Navigation(props) {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#Contact" onClick={() => props.setPage("Contact")}>Contact</a>
+                            <a className="nav-link" href="#Skills" onClick={() => props.setPage("Skills")}>Skills</a>
                         </li>
 
                         <li className="nav-item">
                             <a className="nav-link" href="#Resume" onClick={() => props.setPage("Resume")}>Resume</a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link" href="#Contact" onClick={() => props.setPage("Contact")}>Contact</a>
                         </li>
 
                     </ul>

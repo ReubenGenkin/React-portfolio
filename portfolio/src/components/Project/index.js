@@ -6,14 +6,14 @@ function Project(props) {
         return (
 
                 <section id="Project" className="container-fluid">
-                        <div className="row header-wrapper offset-1">
+                        <div className="row header-wrapper offset-1 projects-header-wrapper">
                                 <h2 className="section-header projects-header">Projects</h2>
                         </div>
 
 
-                        <div className="row offset-1">
+                        <div className="card-wrapper row offset-1">
                                 {projects.map((project) => (
-                                        <div className="card col-md-4 border-0">
+                                        <div className="card project-card col-md-4 border-0">
                                                 <a href={project.link} className="project-link">
                                                 </a>
                              

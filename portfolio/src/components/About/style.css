@@ -1,5 +1,5 @@
 #About {
-    margin-top: 100px;
+    margin-top: 150px;
     background-color: white;
     color: black;
     height: 300px;
@@ -9,8 +9,6 @@
 .about-container {
     padding: 24px 0;
 }
-
-
 
 .profilePic {
     height: 320px;
@@ -24,4 +22,8 @@
 
 .about-margin {
     margin: 0 16px;
+}
+
+.about-header {
+    margin-top: 50px;
 }

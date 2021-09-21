@@ -16,3 +16,17 @@ a {
     margin: 0 auto;
     /* Other styles here */
 }
+
+.header-home-text{
+    font-style: inherit;
+    font-size: 16px;
+}
+
+.top-bar--hidden {
+    display: none;
+}
+
+.top-bar--Show {
+    display: block;
+    color: white;
+}

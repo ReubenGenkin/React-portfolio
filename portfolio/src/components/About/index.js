@@ -16,7 +16,7 @@ function About() {
                         <h2 className=" section-header about-margin about-header" >About</h2>
                     </div>
 
-                    <div className="row col-md-10 offset-1" >
+                    <div className="row col-md-10 offset-1 about-content" >
                         <p className="fs-6 about-margin">Junior full stack developer proficient in core development technologies, such as JavaScript, HTML5, CSS, REACT.js and other technologies.
                             I utilize my background in sales and the food service industry to effectively communicate and adapt within the AGILE workflow.In my work I bring a focus to DRY and concise code with other developers, as
                             well as interactive, dynamic, and accessible design for users.I Earned my full stack web development certificate from Rutgers Coding Bootcamp.

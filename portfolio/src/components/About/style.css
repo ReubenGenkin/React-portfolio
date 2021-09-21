@@ -28,3 +28,10 @@
     margin-top: 50px;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 992px) {
+    .about-content {
+        margin-bottom: 50px;
+        width: 80%;
+    }
+}

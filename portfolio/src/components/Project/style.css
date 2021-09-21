@@ -33,3 +33,21 @@ h2 {
 .project-link {
     color: inherit;
 }
+
+@media screen and (max-width: 992px) {
+    .projects-header {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .projects-header {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-header {
+        margin-top: 375px;
+    }
+}

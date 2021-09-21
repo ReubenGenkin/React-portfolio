@@ -1,12 +1,31 @@
-#project {
+#Project {
     background-color: white;
     color: black;
+    padding: 0;
+}
+
+.projects-header {
+    margin: 16px;
+}
+
+.header-wrapper {
+    background-color: white;
 }
 
 .card-img {
-    width: 80%;
+    width: 70%;
+    
+}
+
+.card {
+    width: 25%;
+    margin: 16px;
 }
 
 h2 {
     color: black;
+}
+
+.project-link {
+    color: inherit;
 }

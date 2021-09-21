@@ -23,4 +23,7 @@ html {
   background-color: white;
 }
 
-
+.section-header {
+  padding-right: 0;
+  width: 50%
+}

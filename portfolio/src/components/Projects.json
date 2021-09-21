@@ -6,7 +6,9 @@
         "image": "https://picsum.photos/150/100",
         "github": "https://github.com/ashryan125/musicesq",
         "link": "https://beatit-music-app.herokuapp.com/",
-        "subtitle": "JavaScript, Handlebars, Express, Node, MySQL2, Spotify web api"
+        "subtitle": "JavaScript, Handlebars, Express, Node, MySQL2, Spotify web api",
+        "shortDes": "A scalable site for sharing and interacting with song reviews",
+        "longDes": ""
     },
     
     {
@@ -15,7 +17,9 @@
         "image": "https://picsum.photos/150/100",
         "github": "",
         "link": "",
-        "subtitle": "HTML, CSS, JavaScript, JQuery"
+        "subtitle": "HTML, CSS, JavaScript, JQuery",
+        "shortDes": "A date companion to assist in deciding on where to eat",
+        "longDes": ""
     },
     
     {
@@ -24,6 +28,19 @@
         "image": "https://picsum.photos/150/100",
         "github": "https://github.com/ReubenGenkin/deckard",
         "link": "https://reubengenkin.github.io/deckard/",
-        "subtitle": "HTML, CSS, JavaScript, JQuery"
+        "subtitle": "HTML, CSS, JavaScript, JQuery",
+        "shortDes": "A themed quiz featuring a countdown clock and JavaScript funtionality",
+        "longDes": ""
+    },
+
+    {
+        "id": 4,
+        "title": "Timed Quiz",
+        "image": "https://picsum.photos/150/100",
+        "github": "https://github.com/ReubenGenkin/deckard",
+        "link": "https://reubengenkin.github.io/deckard/",
+        "subtitle": "HTML, CSS, JavaScript, JQuery",
+        "shortDes": "A scalable site for sharing and interacting with song reviews",
+        "longDes": ""
     }
 ]

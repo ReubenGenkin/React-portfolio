@@ -44,7 +44,7 @@ function ContactForm() {
         <section id="Contact"  className=" mb-5">
             <div className="card w-70 m-3 content-card ml-2" >
                 <div className="row g-0 ml-4">
-                    <h1 className="card-title">Contact Me</h1>
+                    <h1 className="section-header">Contact Me</h1>
                 </div>
                 <div className="row g-0">
                 <div className="w-40">

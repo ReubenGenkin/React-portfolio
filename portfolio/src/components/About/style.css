@@ -3,12 +3,14 @@
     background-color: white;
     color: black;
     height: 300px;
+    width: 100%
 }
 
 .about-container {
-    margin: 50px;
     padding: 24px 0;
 }
+
+
 
 .profilePic {
     height: 320px;
@@ -18,4 +20,8 @@
 
 .tech-list {
     list-style-type: none;
+}
+
+.about-margin {
+    margin: 0 16px;
 }

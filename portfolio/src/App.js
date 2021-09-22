@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css'
 import Skills from './components/Skills';
+import bootstrap from 'bootstrap'
 
 function App(props) {
   const [scrolling, setScrolling] = useState(false);

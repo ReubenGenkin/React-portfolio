@@ -15,7 +15,7 @@ function Home() {
                 <div className=" col-md-6 offset-3">
 
                     <div className="row col-md-6 offset-3">
-                        <span className="icon"></span>
+                        <span className="icon page-icon"></span>
                     </div>
 
                     <div className="row col-md-6 offset-3">
@@ -32,9 +32,9 @@ function Home() {
                             <div className="wheel"></div>
                         </div>
                         <div>
-                            <span className="m_scroll_arrows unu"></span>
-                            <span className="m_scroll_arrows doi"></span>
-                            <span className="m_scroll_arrows trei"></span>
+                            <span className="m_scroll_arrows first"></span>
+                            <span className="m_scroll_arrows second"></span>
+                            <span className="m_scroll_arrows third"></span>
                         </div>
                     </div>
                 </div>

@@ -16,3 +16,22 @@
     padding: 0;
     margin: 0;
 }
+
+@media screen and (max-width: 550) {
+    .offcanvas-body {
+        color: black;
+    }
+
+    .nav-color-shift {
+        color: black;
+    }
+    
+    .nav-item {
+        color: black;
+    }
+    
+    .nav-link {
+        color: black;
+    }
+
+}

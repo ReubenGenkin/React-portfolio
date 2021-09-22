@@ -16,7 +16,7 @@
         "title": "Date Night",
         "image": "https://picsum.photos/150/100",
         "github": "",
-        "link": "",
+        "link": "https://reubengenkin.github.io/Enterthevoid/",
         "subtitle": "HTML, CSS, JavaScript, JQuery",
         "shortDes": "A date companion to assist in deciding on where to eat",
         "longDes": ""
@@ -35,12 +35,12 @@
 
     {
         "id": 4,
-        "title": "Timed Quiz",
+        "title": "Weather Dashboard",
         "image": "https://picsum.photos/150/100",
-        "github": "https://github.com/ReubenGenkin/deckard",
-        "link": "https://reubengenkin.github.io/deckard/",
+        "github": "https://github.com/ReubenGenkin/pris-stratton/",
+        "link": "https://reubengenkin.github.io/pris-stratton/",
         "subtitle": "HTML, CSS, JavaScript, JQuery",
-        "shortDes": "A scalable site for sharing and interacting with song reviews",
+        "shortDes": "A weather dashboard using the Weather API",
         "longDes": ""
     }
 ]

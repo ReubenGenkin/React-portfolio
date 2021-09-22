@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { DiGithubFull, DiBootstrap, DiGithubBadge, DiHtml5, DiJavascript1, DiJqueryLogo, DiMysql, DiReact, } from "react-icons/di";
+//import { DiGithubFull, DiBootstrap, DiGithubBadge, DiHtml5, DiJavascript1, DiJqueryLogo, DiMysql, DiReact, } from "react-icons/di";
 
 function Skills() {
 

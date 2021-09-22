@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from './components/Home'
 import Navigation from './components/Navigation';
 import Project from './components/Project';
@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css'
 import Skills from './components/Skills';
-import bootstrap from 'bootstrap'
+//import bootstrap from 'bootstrap'
 
 function App(props) {
   const [scrolling, setScrolling] = useState(false);
@@ -41,8 +41,8 @@ function App(props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop, scrollPast]);
 
-  const [page, setPage] = useState('About');
-
+  //const [page, setPage] = useState('About');  setPage={setPage}
+ 
   function renderPage() {
     //   if (page === "About") {
     //     return <About />;
@@ -70,7 +70,7 @@ function App(props) {
 
     <main className="main">
 
-      <Navigation setPage={setPage} scrolling={scrolling} setScrolling={setScrolling} setScrollTop={setScrollTop} scrollPast={scrollPast}></Navigation>
+      <Navigation scrolling={scrolling} setScrolling={setScrolling} setScrollTop={setScrollTop} scrollPast={scrollPast}></Navigation>
 
       {renderPage()}
 

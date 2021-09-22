@@ -1,5 +1,6 @@
 {
-  "homepage": "https://reubengenkin.github.io/React-portfolio/",
+  
+  "homepage": "https://reubengenkin-portfolio.herokuapp.com/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh": "^2.8.9",
+    "pages": "0.0.16"
   }
 }

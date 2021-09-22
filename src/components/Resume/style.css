@@ -1,0 +1,26 @@
+#Resume {
+    padding: 0;
+}
+
+.resume-wrapper{
+    margin: 75px 0;
+}
+
+.resume-anchor {
+    color: white;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.resume-link {
+    padding: 16px 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.resume-link:hover {
+    background-color: white;
+    color: Black;
+}

@@ -14,13 +14,13 @@ import Landing from './components/Landing'
 function App(props) {
 
   // state for dynamic rendering
-  const [page, setPage] = useState('main'); 
-
+  const [landing, setLanding] = useState(true); 
+  
   // State for tracking page axis
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [scrollPast, setScrollPast] = useState(false)
-
+  const [scrollPast, setScrollPast] = useState(false);
+  
   // UseEffect for dynamic navigation bar
   useEffect(() => {
     function onScroll() {
@@ -55,12 +55,12 @@ function App(props) {
 
   function renderPage() {
 
-    if (page !== Landing) {
+    if (landing === true) {
       return (
-        <div>
+        <div landing={landing} setLanding={setLanding}>
           <Home />
           <About />
-          <Project />
+          <Project  landing={landing} setLanding={setLanding} />
           <Skills />
           <Resume />
           <Contact />
@@ -70,7 +70,7 @@ function App(props) {
       return (
 
         <div>
-          <Landing />
+          <Landing landing={landing} setLanding={setLanding}/>
         </div>
       )
     }
@@ -82,7 +82,7 @@ function App(props) {
 
     <main className="main">
 
-      <Navigation scrolling={scrolling} setScrolling={setScrolling} setScrollTop={setScrollTop} scrollPast={scrollPast}></Navigation>
+      <Navigation scrolling={scrolling} setScrolling={setScrolling} setScrollTop={setScrollTop} scrollPast={scrollPast} landing={landing} setLanding={setLanding}></Navigation>
 
       {renderPage()}
 

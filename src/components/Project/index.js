@@ -14,10 +14,10 @@ function Project(props) {
                         <div className="card-wrapper row offset-1 w-90">
                                 {projects.map((project) => (
                                         <div className="card project-card col-md-3 border-0">
-                                                <a href={project.link} className="project-link">
+                                                <a  className="project-link">
                                                 </a>
                              
-                                                <a href={project.link} className="project-link">
+                                                <a onClick={()=> props.setLanding(false)} className="project-link">
                                                         <div className="card-content">
                                                                 <h5 className="card-title">{project.title}</h5>
                                                                 <p className="card-text">{project.shortDes}</p>

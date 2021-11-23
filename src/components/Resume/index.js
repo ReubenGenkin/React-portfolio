@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import ResumePDF from '../../assets/Resume.pdf'
+import ResumePDF from '../../assets/Reuben Genkin _ Resume.pdf'
 
 function Resume() {
     return (

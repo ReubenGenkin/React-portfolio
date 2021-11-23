@@ -8,13 +8,20 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css'
 import Skills from './components/Skills';
+import Landing from './components/Landing'
 //import bootstrap from 'bootstrap'
 
 function App(props) {
+
+  // state for dynamic rendering
+  const [page, setPage] = useState('main'); 
+
+  // State for tracking page axis
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [scrollPast, setScrollPast] = useState(false)
 
+  // UseEffect for dynamic navigation bar
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
@@ -22,47 +29,52 @@ function App(props) {
       if (currentPosition > scrollTop) {
         // downscroll code
         setScrolling(false);
-      
+
       } else {
         // upscroll code
         setScrolling(true);
-      
+
       }
-      if (window.pageYOffset > topPosition){
+      if (window.pageYOffset > topPosition) {
         setScrollPast(true)
-      }  else {
+      } else {
         setScrollPast(false)
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
-      
+
     }
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop, scrollPast]);
 
-  //const [page, setPage] = useState('About');  setPage={setPage}
- 
+  
+
+
+  // page rendering between main site and project landing page
+
   function renderPage() {
-    //   if (page === "About") {
-    //     return <About />;
-    //   } else if (page === "Project") {
-    //     return <Project />;
-    //   } else if (page === "Contact") {
-    //     return <Contact />
-    //   } else if (page === "Resume") {
-    //     return <Resume />
-    //   }  }
-    return (
-      <div>
-        <Home/>
-        <About />
-        <Project />
-        <Skills/>
-        <Resume />
-        <Contact />
-      </div>
-    );
+
+    if (page !== Landing) {
+      return (
+        <div>
+          <Home />
+          <About />
+          <Project />
+          <Skills />
+          <Resume />
+          <Contact />
+        </div>
+      )
+    } else {
+      return (
+
+        <div>
+          <Landing />
+        </div>
+      )
+    }
+
   }
 
 

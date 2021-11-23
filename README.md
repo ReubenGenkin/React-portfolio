@@ -2,7 +2,7 @@
 
 ## Description
 
-Custom built react portfolio
+Custom built and designed react portfolio using functional coding witoh hook and state.
 
 ## Table of Contents
 - [Description](#description)

@@ -14,7 +14,7 @@ import Landing from './components/Landing'
 function App(props) {
 
   // state for dynamic rendering
-  const [landing, setLanding] = useState(true); 
+  const [landing, setLanding] = useState(false); 
   
   // State for tracking page axis
   const [scrolling, setScrolling] = useState(false);
@@ -55,7 +55,7 @@ function App(props) {
 
   function renderPage() {
 
-    if (landing === true) {
+    if (landing === false) {
       return (
         <div landing={landing} setLanding={setLanding}>
           <Home />

@@ -17,7 +17,7 @@ function Project(props) {
                                                 <a  className="project-link">
                                                 </a>
                              
-                                                <a onClick={()=> props.setLanding(false)} className="project-link">
+                                                <a onClick={()=> props.setLanding(true)} className="project-link">
                                                         <div className="card-content">
                                                                 <h5 className="card-title">{project.title}</h5>
                                                                 <p className="card-text">{project.shortDes}</p>

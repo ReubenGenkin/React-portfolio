@@ -20,23 +20,23 @@ function Navigation(props) {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 nav-color-shift">
               <li className="nav-item">
-                <a className="nav-link" onClick={()=> props.setLanding(true)} href="#About" >About</a>
+                <a className="nav-link" onClick={()=> props.setLanding(false)} href="#About" >About</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" onClick={()=> props.setLanding(true)} href="#Project" >Projects</a>
+                <a className="nav-link" onClick={()=> props.setLanding(false)} href="#Project" >Projects</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" onClick={()=> props.setLanding(true)} href="#Skills" >Skills</a>
+                <a className="nav-link" onClick={()=> props.setLanding(false)} href="#Skills" >Skills</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" onClick={()=> props.setLanding(true)} href="#Resume" >Resume</a>
+                <a className="nav-link" onClick={()=> props.setLanding(false)} href="#Resume" >Resume</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" onClick={()=> props.setLanding(true)} href="#Contact" >Contact</a>
+                <a className="nav-link" onClick={()=> props.setLanding(false)} href="#Contact" >Contact</a>
               </li>
             </ul>
 

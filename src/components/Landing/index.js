@@ -32,7 +32,7 @@ function Landing(props) {
 
                         <a href={filteredProject.link} className="btn-anchor">
                             <button className="btn">
-                                <p className="btn-text">Deployed site</p>
+                                <p className="btn-text">Deployed site </p>
                             </button>
                         </a>
 

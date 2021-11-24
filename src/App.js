@@ -13,6 +13,9 @@ import Landing from './components/Landing'
 
 function App(props) {
 
+  //state for project ID
+  const [projId, setProjId] = useState(0); 
+
   // state for dynamic rendering
   const [landing, setLanding] = useState(false); 
   
@@ -60,7 +63,7 @@ function App(props) {
         <div landing={landing} setLanding={setLanding}>
           <Home />
           <About />
-          <Project  landing={landing} setLanding={setLanding} />
+          <Project  landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId}/>
           <Skills />
           <Resume />
           <Contact />
@@ -70,7 +73,12 @@ function App(props) {
       return (
 
         <div>
-          <Landing landing={landing} setLanding={setLanding}/>
+          <Home />
+          <About />
+          <Landing landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId}/>
+          <Skills />
+          <Resume />
+          <Contact />
         </div>
       )
     }

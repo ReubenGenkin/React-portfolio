@@ -22,6 +22,11 @@ a {
     font-size: 16px;
 }
 
+.icon-transition {
+    transition-property: color;
+    transition-duration: 5s;
+}
+
 .top-bar--hidden {
     display: none;
 }

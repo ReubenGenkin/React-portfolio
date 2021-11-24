@@ -14,16 +14,16 @@ import Landing from './components/Landing'
 function App(props) {
 
   //state for project ID
-  const [projId, setProjId] = useState(0); 
+  const [projId, setProjId] = useState(0);
 
   // state for dynamic rendering
-  const [landing, setLanding] = useState(false); 
-  
+  const [landing, setLanding] = useState(false);
+
   // State for tracking page axis
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [scrollPast, setScrollPast] = useState(false);
-  
+
   // UseEffect for dynamic navigation bar
   useEffect(() => {
     function onScroll() {
@@ -51,37 +51,31 @@ function App(props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop, scrollPast]);
 
-  
+
 
 
   // page rendering between main site and project landing page
 
   function renderPage() {
 
-    if (landing === false) {
-      return (
-        <div landing={landing} setLanding={setLanding}>
-          <Home />
-          <About />
-          <Project  landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId}/>
-          <Skills />
-          <Resume />
-          <Contact />
-        </div>
-      )
-    } else {
-      return (
 
-        <div>
-          <Home />
-          <About />
-          <Landing landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId}/>
-          <Skills />
-          <Resume />
-          <Contact />
-        </div>
-      )
-    }
+    return (
+      <div landing={landing} setLanding={setLanding}>
+        <Home />
+        <About />
+
+        {
+          landing ?
+            <Landing landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId} />:
+            <Project landing={landing} setLanding={setLanding} projId={projId} setProjId={setProjId} /> 
+          }
+
+        <Skills />
+        <Resume />
+        <Contact />
+      </div>
+    )
+
 
   }
 

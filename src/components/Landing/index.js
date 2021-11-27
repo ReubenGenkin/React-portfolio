@@ -16,6 +16,7 @@ function Landing(props) {
         <div className="col-md-4 offset-2">
           {projects
             .filter((item) => item.id == props.projId)
+            
             .map((filteredProject) => {
               if (el.type === "header") {
                 <>

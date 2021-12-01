@@ -9,6 +9,9 @@
     margin: 0 0 16px 16px;
 }
 
+.projects-margin {
+    margin: 0 24px;
+}
 .projects-header-wrapper {
     width: 90%;
 }

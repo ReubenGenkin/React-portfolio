@@ -1,40 +1,38 @@
-import React from 'react';
-import projects from "../projects.json"
-import './style.css'
+import React from "react";
+import projects from "../projects.json";
+import Section from "../Section";
+import "./style.css";
 
 function Project(props) {
-        return (
+  return (
+    <Section
+      sectionId="Project"
+      title="Projects"
+      headerClassVal="projects"
+      children={
+        <div className="card-wrapper row offset-1 w-90">
+          {projects.map((project) => (
+            <div className="card project-card col-md-3 border-0 projects-margin">
+              <a className="project-link"></a>
 
-                <section id="Project" className="container-fluid">
-                        <div className="row header-wrapper offset-1 projects-header-wrapper">
-                                <h2 className="section-header projects-header">Projects</h2>
-                        </div>
-
-
-                        <div className="card-wrapper row offset-1 w-90">
-                                {projects.map((project) => (
-                                        <div className="card project-card col-md-3 border-0">
-                                                <a  className="project-link">
-                                                </a>
-                                               
-                                                <a onClick={()=> {props.setLanding(true); props.setProjId(project.id);}} className="project-link">
-                                                        <div className="card-content">
-                                                                <h5 className="card-title">{project.title}</h5>
-                                                                <p className="card-text">{project.shortDes}</p>
-                                                        </div>
-                                                </a>
-
-                                        </div>
-                                ))}
-                        </div>
-
-
-
-
-
-
-                </section>
-        );
+              <a
+                onClick={() => {
+                  props.setLanding(true);
+                  props.setProjId(project.id);
+                }}
+                className="project-link"
+              >
+                <div className="card-content">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text">{project.shortDes}</p>
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+      }
+    ></Section>
+  );
 }
 
 export default Project;

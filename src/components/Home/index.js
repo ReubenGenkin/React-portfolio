@@ -1,13 +1,27 @@
 import React from 'react';
-//import profilePicture from '../../assets/profilePic.jpg'
 import './style.css';
 
+// origional html for arrow animation
+
+{/* <span className="m_scroll_arrows first"></span>
+<span className="m_scroll_arrows second"></span>
+<span className="m_scroll_arrows third"></span> */}
+
+// arrow animation generation
+let arrowArr =["first", "second", "third"]
+    function arrowGen() {
+
+        return (
+            arrowArr.map((el)=>(
+                <span className={`m_scroll_arrows ${el}`}></span>
+          )) 
+  )
+}
+    
 
 function Home() {
 
     return (
-
-
 
         <section id="Home" className="col-md-12">
 
@@ -22,7 +36,7 @@ function Home() {
                         <h1 className=" page-head">Reuben Genkin</h1>
                     </div>
                     <div className="row col-md-6 offset-3">
-                        <p className="sub-header">Development & design</p>
+                        <p className="sub-header">Development & Design</p>
                     </div>
                 </div>
                 <div className=" col-md-6 offset-3">
@@ -32,9 +46,8 @@ function Home() {
                             <div className="wheel"></div>
                         </div>
                         <div>
-                            <span className="m_scroll_arrows first"></span>
-                            <span className="m_scroll_arrows second"></span>
-                            <span className="m_scroll_arrows third"></span>
+                           {arrowGen()
+                           }
                         </div>
                     </div>
                 </div>

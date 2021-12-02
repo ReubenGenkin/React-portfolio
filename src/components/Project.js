@@ -9,7 +9,8 @@ function Project(props) {
       sectionId="Project"
       title="Projects"
       headerClassVal="projects"
-      children={
+      >
+      
         <div className="card-wrapper row offset-1 w-90">
           {projects.map((project) => (
             <div className="card project-card col-md-3 border-0 projects-margin">
@@ -30,8 +31,8 @@ function Project(props) {
             </div>
           ))}
         </div>
-      }
-    ></Section>
+      
+    </Section>
   );
 }
 

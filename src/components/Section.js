@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import * as React from 'react';
 
 function Section(props) {
     

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import projects from "../projects.json";
+import projects from "./projects.json";
 
 function Landing(props) {
   function landingEl() {

@@ -1,7 +1,7 @@
 import React from "react";
 //import profilePicture from '../../assets/profilePic.jpg'
 import "./style.css";
-import Section from "../Section";
+import Section from "./Section";
 
 function About() {
   return (

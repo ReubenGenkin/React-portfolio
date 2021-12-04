@@ -1,0 +1,92 @@
+/* MAIN------------------------------------------CSS */
+
+
+
+/* MAIN------------------------------------------NAVIGATION */
+.navbar {
+    background-color: black;
+    height: 10%;
+}
+
+.nav-bar--hidden {
+    background-color: rgba(0,0,0,0.5);
+    color: 	rgba(255,255,255, 1);
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+/* MAIN-------------------------------------------------HEADER */
+.header-link {
+    text-decoration: none;
+}
+
+.header-home {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+.icon-top-bar {
+    background: url('../../assets/logo.png');
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    /* Other styles here */
+}
+
+.header-home-text{
+    font-style: inherit;
+    font-size: 16px;
+}
+
+.icon-transition {
+    transition-property: color;
+    transition-duration: 5s;
+}
+
+.top-bar--hidden {
+    display: none;
+}
+
+.top-bar--Show {
+    display: block;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+/* MEDIA-------------------------------------------------NAVBAR*/
+@media screen and (max-width: 550) {
+    .offcanvas-body {
+        color: black;
+    }
+
+    .nav-color-shift {
+        color: black;
+    }
+    
+    .nav-item {
+        color: black;
+    }
+    
+    .nav-link {
+        color: black;
+    }
+
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helper';
+import { validateEmail } from '../utils/helper';
 import './style.css'
 
 function ContactForm() {
@@ -49,6 +49,7 @@ function ContactForm() {
                 </div>
 
                 <form id="contact-form row email-form " onSubmit={handleSubmit}>
+
                     <div className="form-group m-2">
                         <label htmlFor="name" className="form-style form-label">Name: </label>
                         <input type="text" className="form-control form-style" defaultValue={name} name="name" aria-describedby="name" placeholder="Your name" onBlur={handleChange} />
@@ -56,10 +57,9 @@ function ContactForm() {
 
                     <div className="form-group m-2">
                         <label htmlFor="email" className="form-style form-label">Email Address: </label>
-
                         <input type="email" className="form-control form-style" defaultValue={email} name="email" aria-describedby="email" placeholder="Your email" onBlur={handleChange} />
                     </div>
-
+ n
                     <div className="form-group m-2">
                         <label htmlFor="message" className="form-style form-label">Message: </label>
                         <textarea name="message" className="form-control form-style" defaultValue={message} aria-describedby="message" placeholder="Your message" onBlur={handleChange} rows="5" />

@@ -1,8 +1,6 @@
 import React from 'react';
-import './style.css';
 
 // origional html for arrow animation
-
 {/* <span className="m_scroll_arrows first"></span>
 <span className="m_scroll_arrows second"></span>
 <span className="m_scroll_arrows third"></span> */}
@@ -17,7 +15,6 @@ let arrowArr =["first", "second", "third"]
           )) 
   )
 }
-    
 
 function Home() {
 
@@ -46,8 +43,7 @@ function Home() {
                             <div className="wheel"></div>
                         </div>
                         <div>
-                           {arrowGen()
-                           }
+                           {arrowGen()}
                         </div>
                     </div>
                 </div>

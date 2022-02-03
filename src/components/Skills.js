@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import Section from "./Section";
 //import { DiGithubFull, DiBootstrap, DiGithubBadge, DiHtml5, DiJavascript1, DiJqueryLogo, DiMysql, DiReact, } from "react-icons/di";
 

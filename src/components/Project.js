@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "./projects.json";
 import Section from "./Section";
-import "./style.css";
 
 function Project(props) {
   return (

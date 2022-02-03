@@ -1,5 +1,6 @@
 import React from "react";
 //import profilePicture from '../../assets/profilePic.jpg'
+
 import Section from "./Section";
 
 function About() {

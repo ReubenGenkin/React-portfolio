@@ -8,7 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css'
 import Skills from './components/Skills';
-import Landing from './components/Landing'
+import Landing from './components/Landing';
+import './Styles/MainStyles.css';
 //import bootstrap from 'bootstrap'
 
 function App(props) {
@@ -88,7 +89,7 @@ function App(props) {
 
       {renderPage()}
 
-      <Footer></Footer>
+      <Footer/>
 
     </main>
 

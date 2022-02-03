@@ -1,5 +1,22 @@
 /* MAIN------------------------------------------CSS */
 
+/* MAIN-------------------------------------------GRID */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
+}
+
+.grid-item-header{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.grid-item-content {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-column-end: 10;
+}
 /* MAIN------------------------------------------NAVIGATION */
 
 .navbar {

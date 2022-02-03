@@ -10,8 +10,8 @@ function About() {
       title="About"
       headerClassVal="about"
       children={
-        <div className="row col-md-10 offset-1 about-content">
-          <p className="fs-6 about-margin">
+        <div className="about-content grid-item-content">
+          <p className="about-margin">
             Junior full stack developer proficient in core development
             technologies, such as JavaScript, HTML5, CSS, REACT.js and other
             technologies. I utilize my background in sales and the food service

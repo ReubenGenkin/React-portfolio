@@ -10,9 +10,9 @@ function Project(props) {
       headerClassVal="projects"
       >
       
-        <div className="card-wrapper row offset-1 w-90">
+        <div className="card-wrapper grid-item-content">
           {projects.map((project) => (
-            <div className="card project-card col-md-3 border-0 projects-margin">
+            <div className="card project-card projects-margin">
               <a className="project-link"></a>
 
               <a

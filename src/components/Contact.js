@@ -43,23 +43,23 @@ function ContactForm() {
 
         <section id="Contact" className="container-fluid">
             <div class="contact-wrapper">
-                <div className="row">
+                <div className="">
                     <h2 className="section-header contact-header">Contact Me</h2>
                 </div>
 
-                <form id="contact-form row email-form " onSubmit={handleSubmit}>
+                <form id="contact-form  email-form " onSubmit={handleSubmit}>
 
-                    <div className="form-group m-2">
+                    <div className="">
                         <label htmlFor="name" className="form-style form-label">Name: </label>
                         <input type="text" className="form-control form-style" defaultValue={name} name="name" aria-describedby="name" placeholder="Your name" onBlur={handleChange} />
                     </div>
 
-                    <div className="form-group m-2">
+                    <div className="form-group">
                         <label htmlFor="email" className="form-style form-label">Email Address: </label>
                         <input type="email" className="form-control form-style" defaultValue={email} name="email" aria-describedby="email" placeholder="Your email" onBlur={handleChange} />
                     </div>
  
-                    <div className="form-group m-2">
+                    <div className="form-group ">
                         <label htmlFor="message" className="form-style form-label">Message: </label>
                         <textarea name="message" className="form-control form-style" defaultValue={message} aria-describedby="message" placeholder="Your message" onBlur={handleChange} rows="5" />
                     </div>

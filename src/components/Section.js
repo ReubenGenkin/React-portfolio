@@ -4,9 +4,10 @@ function Section(props) {
     
         return (
 
-                <section id={props.sectionId} className="container-fluid">
-                        <div className="row header-wrapper offset-1 projects-header-wrapper">
-                                <h2 className={`section-header ${props.headerClassVal}-header ${props.headerClassVal}-margin`}>{props.title}</h2>
+                <section id={props.sectionId} className="container-fluid grid-container">
+                        <div className=" grid-item-header header-wrapper projects-header-wrapper">
+                                <h2 className={` ${props.headerClassVal}-header ${props.headerClassVal}-margin `}
+                                >{props.title}</h2>
                         </div>
                 
                 {props.children}
@@ -14,5 +15,6 @@ function Section(props) {
                 </section>
         );
 }
+
 
 export default Section;

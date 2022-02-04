@@ -466,14 +466,15 @@ li {
 }
 
 .skill-list {
-    padding-left: 12px;
     margin-left: 16px;
+    padding: 0;
 }
 
 /* MAIN ------------------------------------ RESUME */
 
 #Resume {
     padding: 0;
+    background-color: black;
 }
 
 .resume-wrapper{
@@ -500,6 +501,10 @@ li {
 }
 
 /* MAIN -------------------------------------------------------- CONTACT */
+
+#Contact {
+    background-color: black;
+}
 
 .contact-header {
     color: white;

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 
 function Navigation(props) {
-  let arr = ["About", "Projects", "Skills", "Resume", "Contact"];
+  let arr = ["About", "Project", "Skills", "Resume", "Contact"];
   function navBar(x) {
     return arr.map((el) => (
       <li className="nav-item">
@@ -31,7 +31,7 @@ function Navigation(props) {
       </div>
 
       <div className="nav-content">
-        <ul>{navBar()}</ul>
+        <ul className="nav-list-ul">{navBar()}</ul>
       </div>
     </nav>
   );

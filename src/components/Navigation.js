@@ -1,55 +1,40 @@
-import React from 'react';
-import Header from './Header';
-
+import React from "react";
+import Header from "./Header";
 
 function Navigation(props) {
-
-
-  let arr = [
-    "About",
-    "Projects",
-    "Skills",
-    "Resume",
-    "Contact"]
+  let arr = ["About", "Projects", "Skills", "Resume", "Contact"];
   function navBar(x) {
-    return (
-              arr.map((el)=>(
-              <li className="nav-item">
-              <a className="nav-link" onClick={()=> props.setLanding(false)} href={`#${el}`} >{el}</a>
-              </li>
-            )) 
-    )
+    return arr.map((el) => (
+      <li className="nav-item">
+        <a
+          className="nav-link navbar-list"
+          onClick={() => props.setLanding(false)}
+          href={`#${el}`}
+        >
+          {el}
+        </a>
+      </li>
+    ));
   }
-  
-
 
   return (
+    <nav
+      className={`navbar  ${
+        props.scrolling ? "nav-bar--hidden" : ""
+      } navbar-grid`}
+    >
+      <div className="container-fluid nav-logo">
+        <a className="navbar-brand " href="#Home">
+          {" "}
+          <Header scrollPast={props.scrollPast} />{" "}
+        </a>
+      </div>
 
-    <nav className={`fixed-top navbar navbar-expand-sm ${props.scrolling ? "nav-bar--hidden" : ""}`}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#Home"> <Header scrollPast={props.scrollPast} /> </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div id="offcanvasNavbar" className="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div className="offcanvas-body">
-
-        
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 nav-color-shift">
-              {navBar()}
-            </ul>
-
-          </div>
-        </div>
+      <div className="nav-content">
+        <ul>{navBar()}</ul>
       </div>
     </nav>
-
-
-  )
+  );
 }
 
 export default Navigation;

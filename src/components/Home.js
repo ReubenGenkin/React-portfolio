@@ -20,23 +20,23 @@ function Home() {
 
     return (
 
-        <section id="Home" className="col-md-12">
+        <section id="Home">
 
             <div className=" container-fluid" >
-                <div className=" col-md-6 offset-3">
+                <div>
 
-                    <div className="row col-md-6 offset-3">
+                    <div>
                         <span className="icon page-icon"></span>
                     </div>
 
-                    <div className="row col-md-6 offset-3">
+                    <div>
                         <h1 className=" page-head">Reuben Genkin</h1>
                     </div>
-                    <div className="row col-md-6 offset-3">
+                    <div>
                         <p className="sub-header">Development & Design</p>
                     </div>
                 </div>
-                <div className=" col-md-6 offset-3">
+                <div >
                     <div className="mouse_scroll animation-scroll-wrapper">
 
                         <div className="mouse">

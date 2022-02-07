@@ -1,4 +1,8 @@
 /* MAIN------------------------------------------CSS */
+html{
+    scroll-behavior:smooth
+}
+
 * {
     line-height: 1.5rem;
 }
@@ -578,9 +582,22 @@ li {
 
 /* Main ---------------------------------------------------------FOOTER */
 
-.icon-wrapper {
-    padding: 8px;
-    height: 64px;
+.footer-icon-wrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link{
+    display: block;
+    margin: 0 auto;
+    size: 32px;
+}
+
+svg.defs-only {
+    display:block; position: absolute; 
+    height:0; width:0; margin: 0; padding: 0; 
+    border: none; overflow: hidden;
 }
 
 /* MEDIA */

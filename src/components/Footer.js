@@ -5,16 +5,16 @@ import { AiOutlineGithub } from 'react-icons/ai';
 function Footer() {
     return (
 
-        <footer className="text-center bg-light mt-4">
-            <section className="d-flex justify-content-center border-bottom icon-wrapper">
-                <div>
-                    <a href="www.linkedin.com/in/ReubenGenkin" className="me-4 text-black fs-1">
+        <footer>
+            <section className="footer-icon-wrapper">
+                
+                    <a href="www.linkedin.com/in/ReubenGenkin" className="footer-link">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/ReubenGenkin" className="me-4 text-black fs-1">
+                    <a href="https://github.com/ReubenGenkin" className="footer-link">
                         <AiOutlineGithub />
                     </a>
-                </div>
+                
             </section>
         </footer>
     )

@@ -11,7 +11,7 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
 
   let arr = ["Name", "Email", "Message"];
-  function contactFormGen(x) {
+  function contactFormGen() {
     return arr.map((el) => (
       <div className="form-group">
         <label htmlFor={el} className="form-style form-label">

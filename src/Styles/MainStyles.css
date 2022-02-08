@@ -84,10 +84,6 @@ margin-right: 16px;
 
 /* MAIN-------------------------------------------------HEADER */
 
-.header-link {
-    text-decoration: none;
-}
-
 .header-home {
     text-decoration: none;
     color: white;
@@ -103,7 +99,7 @@ margin-right: 16px;
 }
 
 .header-home-text{
-    font-style: inherit;
+    text-decoration: none;
     font-size: 16px;
 }
 
@@ -381,8 +377,15 @@ body {
     width: 90%;
 }
 
+.card-content {
+    padding: 8px;
+    border-left: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+}
+
 .card-title {
     margin: 0;
+    font-size: 16px;
 }
 
 .project-card {

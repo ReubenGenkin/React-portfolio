@@ -16,7 +16,7 @@ html{
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
     grid-template-areas:
-    " nav-logo . nav-content "
+    " nav-logo nav-content "
       ;
 }
 
@@ -607,23 +607,47 @@ svg.defs-only {
 /* MEDIA */
 
 /* MEDIA-------------------------------------------------NAVBAR*/
-@media screen and (max-width: 550) {
-    .offcanvas-body {
-        color: black;
-    }
 
-    .nav-color-shift {
-        color: black;
-    }
+    @media screen and (max-width: 360px){
+        .navbar-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas:
+            " nav-logo nav-content "
+              ;
+        }
+
+        .nav-toggle-off {
+            display: none;
+        }
+
+        /* .nav-content {
+            background-color: black;
+            z-index: 1000;
+        } */
+
+        .nav-list-ul {
+            flex-direction: column;
+            height: auto;
+        }
+        .nav-item:nth-child(1){
+            border-top: 1px solid rgba(255, 255, 255, 0.555);
+            margin-top: 50px;
+        }
+        .nav-item {
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.555);
+            text-align: center;
+            margin-right: 0px;
+            padding: 20px 0;
+        }
+        .nav-btn {
+            display: block;
+        }
     
-    .nav-item {
-        color: black;
     }
-    
-    .nav-link {
-        color: black;
-    }
-}
 
 /* MEDIA ------------------------------------------HOME */
 
@@ -641,10 +665,26 @@ svg.defs-only {
 
 /* MEDIA ------------------------------------------ABOUT */
 
-@media screen and (max-width: 992px) {
-    .about-content {
-        margin-bottom: 50px;
-        width: 80%;
+@media screen and (max-width: 768px) {
+    #About {
+        margin-bottom: 100px;
+    }
+}
+
+/* @media screen and (max-width: 680px) {
+    .about-margin {
+        padding-bottom: 300px;
+        display: block;
+    }
+} */
+
+@media screen and (max-width: 360px) {
+    #About {
+        margin-bottom: 400px;
+    }
+
+    .card-content {
+        margin: 16px 16px 16px 0;
     }
 }
 
@@ -657,13 +697,22 @@ svg.defs-only {
 }
 
 @media screen and (max-width: 680px) {
-    .projects-header {
+    /* .projects-header-wrapper {
+        margin-bottom: 500px;
+    } */
+
+    /* .projects-header {
         margin-top: 150px;
-    }
+        margin-bottom: 150px;
+    } */
+    
 }
 
-@media screen and (max-width: 480px) {
-    .projects-header {
-        margin-top: 375px;
-    }
+@media screen and (max-width: 360px) {
+    /* #Project {
+        margin-top: 100px;
+    } */
 }
+
+/* MEDIA ----------------------------------------------- RESUME */
+

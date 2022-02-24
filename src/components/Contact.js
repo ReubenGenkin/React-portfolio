@@ -8,7 +8,7 @@ function ContactForm() {
     message: "",
   });
   const { name, email, message } = formState;
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState(null);
 
   let arr = ["Name", "Email", "Message"];
   function contactFormGen() {
@@ -20,7 +20,6 @@ function ContactForm() {
         <input
           type="text"
           className="form-control form-style"
-          defaultValue={el}
           name={el}
           aria-describedby={el}
           placeholder={`Your ${el}`}
@@ -60,6 +59,8 @@ function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(formState);
+    
+    errorMessage=== ""? setErrorMessage("Your email has been sent!"): setErrorMessage("");
   }
 
   return (

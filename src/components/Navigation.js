@@ -43,7 +43,7 @@ function Navigation(props) {
           props.scrolling ? "nav-bar--hidden" : ""
         } navbar-grid`}
       >
-        { <button onClick={toggleNav} className={`nav-btn ${screenWidth <361? "nav-toggle-off":""}`}>BTN</button>}
+        { <button onClick={toggleNav} className={`nav-btn ${screenWidth >361? "nav-toggle-off":""}`}>BTN</button>}
         <div className="container-fluid nav-logo ">
           <a className="navbar-brand " href="#Home">
             {" "}

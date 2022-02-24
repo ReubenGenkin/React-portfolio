@@ -82,6 +82,10 @@ html{
 margin-right: 16px;
 }
 
+.nav-toggle-off {
+    display: none;
+}
+
 /* MAIN--------------------------------------------------HEADER */
 
 .header-home {
@@ -619,9 +623,7 @@ svg.defs-only {
               ;
         }
 
-        .nav-toggle-off {
-            display: none;
-        }
+        
 
         /* .nav-content {
             background-color: black;
@@ -643,10 +645,7 @@ svg.defs-only {
             margin-right: 0px;
             padding: 20px 0;
         }
-        .nav-btn {
-            display: block;
-        }
-    
+       
     }
 
 /* MEDIA ------------------------------------------HOME */

@@ -623,6 +623,11 @@ svg.defs-only {
               ;
         }
 
+        .nav-content {
+            background-color: black;
+            height: auto;
+        }
+
         .nav-list-ul {
             flex-direction: column;
             height: auto;
@@ -630,11 +635,14 @@ svg.defs-only {
         }
 
         .nav-item {
+            display: block;
             width: 100%;
             text-align: center;
             margin-right: 0px;
             height: 32px;
             margin: 16px;
+            size: 16px;
+            color: black;
         }
 
         .nav-link {

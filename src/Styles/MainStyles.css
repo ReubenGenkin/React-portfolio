@@ -633,17 +633,21 @@ svg.defs-only {
         .nav-list-ul {
             flex-direction: column;
             height: auto;
+            background-color: black;
         }
-        .nav-item:nth-child(1){
-            border-top: 1px solid rgba(255, 255, 255, 0.555);
-            margin-top: 50px;
-        }
+
         .nav-item {
             width: 100%;
-            border-top: 1px solid rgba(255, 255, 255, 0.555);
             text-align: center;
             margin-right: 0px;
-            padding: 20px 0;
+            height: 32px;
+            margin: 16px;
+        }
+
+        .nav-link {
+            color: white;
+            background-color: black;
+            z-index: 10000;
         }
        
     }

@@ -623,13 +623,6 @@ svg.defs-only {
               ;
         }
 
-        
-
-        /* .nav-content {
-            background-color: black;
-            z-index: 1000;
-        } */
-
         .nav-list-ul {
             flex-direction: column;
             height: auto;

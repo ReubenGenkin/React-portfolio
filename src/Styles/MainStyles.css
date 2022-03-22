@@ -657,7 +657,37 @@ svg.defs-only {
 
 /* MEDIA ------------------------------------------ABOUT */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
+    #About {
+        margin-bottom: 550px;
+    }
+
+    .card-content {
+        margin: 16px 16px 16px 0;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #About {
+        margin-bottom: 400px;
+    }
+
+    .card-content {
+        margin: 16px 16px 16px 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #About {
+        margin-bottom: 250px;
+    }
+
+    .card-content {
+        margin: 16px 16px 16px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
     #About {
         margin-bottom: 100px;
     }
@@ -669,16 +699,6 @@ svg.defs-only {
         display: block;
     }
 } */
-
-@media screen and (max-width: 360px) {
-    #About {
-        margin-bottom: 500px;
-    }
-
-    .card-content {
-        margin: 16px 16px 16px 0;
-    }
-}
 
 /* MAIN --------------------------------------------PROJECTS */
 

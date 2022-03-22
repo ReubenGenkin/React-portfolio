@@ -1,14 +1,15 @@
 import React from "react";
 import projects from "./projects.json";
+import Section from "./Section";
 
 function Landing(props) {
   function landingEl() {
     let arr = [
       { name: "header", type: "header" },
 
-      { name: "deploy", type: "button" },
+      { name: "Deploy", type: "button" },
 
-      { name: "github", type: "button" },
+      { name: "Github", type: "button" },
     ];
     return arr.map((el) =>
       projects
@@ -23,7 +24,7 @@ function Landing(props) {
           ) : el.type === "button" ? (
             <a href={filteredProject.link} className="btn-anchor">
               <button className="btn">
-                <p className="btn-text">Deployed site </p>
+                <p className="btn-text">{el.name} </p>
               </button>
             </a>
           ) : null)
@@ -32,15 +33,16 @@ function Landing(props) {
   }
 
   return (
-    <section id="Landing" className="col-md-12 container-fluid">
-      <div className="row header-wrapper offset-1">
-        <h2> Project Information</h2>
-      </div>
+    <Section
+      sectionId="Landing"
+      title="Project information"
+      headerClassVal="projects"
+      >
 
-      <div className="row">
-        <div className="col-md-4 offset-2">{landingEl()}</div>
-      </div>
-    </section>
+        <div className="about-margin">{landingEl()}</div>
+
+    </Section>
+
   );
 }
 

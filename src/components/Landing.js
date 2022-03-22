@@ -21,13 +21,26 @@ function Landing(props) {
               <h3>{filteredProject.title}</h3>
               <span>{filteredProject.shortDes}</span>
             </>
-          ) : el.type === "button" ? (
+          ) : el.type === "button" ? 
+              el.name === "Deploy" ?
+              
+          (
             <a href={filteredProject.link} className="btn-anchor">
               <button className="btn">
                 <p className="btn-text">{el.name}</p>
               </button>
             </a>
-          ) : null)
+          ) 
+          : 
+          (
+            <a href={filteredProject.github} className="btn-anchor">
+              <button className="btn">
+                <p className="btn-text">{el.name}</p>
+              </button>
+            </a>
+          ) : 
+          
+          null)
         })
     );
   }

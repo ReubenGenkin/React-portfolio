@@ -24,7 +24,7 @@ function Landing(props) {
           ) : el.type === "button" ? (
             <a href={filteredProject.link} className="btn-anchor">
               <button className="btn">
-                <p className="btn-text">{el.name} </p>
+                <p className="btn-text">{el.name}</p>
               </button>
             </a>
           ) : null)

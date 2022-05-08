@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section";
-//import { DiGithubFull, DiBootstrap, DiGithubBadge, DiHtml5, DiJavascript1, DiJqueryLogo, DiMysql, DiReact, } from "react-icons/di";
+
 
 function Skills() {
   return (
@@ -11,9 +11,9 @@ function Skills() {
       children={
         <div>
           <div>
-            <ul className=" skill-list">
-              <li>React.js</li>
+            <ul className="skill-list">
               <li>JavaScript</li>
+              <li>React.js</li>
             </ul>
             <ul className="skill-list">
               <li>Node</li>
@@ -23,7 +23,7 @@ function Skills() {
               <li>Git/GitHub</li>
               <li>GraphQL</li>
             </ul>
-            <ul className=" skill-list">
+            <ul className="skill-list">
               <li>MongoDB/Mongoose</li>
               <li>Express.js</li>
             </ul>

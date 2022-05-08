@@ -43,7 +43,7 @@ function Navigation(props) {
           props.scrolling ? "nav-bar--hidden" : ""
         } navbar-grid`}
       >
-        { <button onClick={toggleNav} className={`nav-btn ${screenWidth >361? "nav-toggle-off":""}`}>BTN</button>}
+        { <button onClick={toggleNav} className={`nav-btn ${screenWidth >481? "nav-toggle-off":""}`}>BTN</button>}
         <div className="container-fluid nav-logo ">
           <a className="navbar-brand " href="#Home">
             {" "}
@@ -51,9 +51,10 @@ function Navigation(props) {
           </a>
         </div>
 
-        <div className={`nav-content ${(screenWidth <361 & toggleMenu=== false )? "nav-toggle-off": ""}`}>
+        <div className={`nav-content ${(screenWidth <481 & toggleMenu=== false )? "nav-toggle-off": ""}`}>
           <ul className="nav-list-ul">{navBar()}</ul>
         </div>
+        
       </nav>
       
     );
@@ -61,3 +62,4 @@ function Navigation(props) {
     export default Navigation;
 
 
+ 

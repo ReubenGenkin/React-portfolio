@@ -51,7 +51,7 @@ function Navigation(props) {
           </a>
         </div>
 
-        <div className={`nav-content ${(screenWidth <481 & toggleMenu=== false )? "nav-toggle-off": ""}`}>
+        <div className={`nav-content ${(screenWidth <481 && toggleMenu=== false )? "nav-toggle-off": ""}`}>
           <ul className="nav-list-ul">{navBar()}</ul>
         </div>
         

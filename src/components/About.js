@@ -14,7 +14,7 @@ function About() {
           <p className="about-margin">
             Junior full stack developer proficient in core development
             technologies, such as JavaScript, HTML5, CSS, REACT.js and others. I
-            utilize my background in sales and the food service industry to
+            utilize my background in sales andhellp the food service industry to
             effectively communicate and adapt within the AGILE workflow. In my
             work I bring a focus to DRY, concise, and collaborative code working
             with other developers, as well as interactive, dynamic, and
